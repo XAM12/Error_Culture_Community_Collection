@@ -1,11 +1,13 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
-import dsv from '@rollup/plugin-dsv';
+import csv from "./src/plugins/csv";
+
+
 
 export default defineConfig({
 	plugins: [
+		csv(),
 		sveltekit(),
-		dsv()
-	]
+	],
 });
