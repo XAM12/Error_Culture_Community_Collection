@@ -43,7 +43,7 @@
 				<tr>
 					<td>{entry.projectStage}</td>
 					<td>{entry.topic}</td>
-					<td>
+					<td class="align-top">
 						<div>
 							{#if entry.qrp}
 								{@const [header, content] = entry.qrp.split(':')}
@@ -54,7 +54,7 @@
 							{/if}
 						</div>
 					</td>
-					<td>
+					<td class="align-top">
 						<div>
 							{#if entry.honestError}
 								{@const [header, content] = entry.honestError.split(':')}
