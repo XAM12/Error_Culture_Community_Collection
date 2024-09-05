@@ -26,8 +26,8 @@
 			project stage or topic, feel free to create it.
 		</p>
 		<table class="mt-8 table">
-			<thead>
-			<tr>
+			<thead class="sticky top-0 bg-base-100">
+			<tr class="text-[14px]">
 				<th>Project Stage</th>
 				<th>Topic / Field</th>
 				<th>
