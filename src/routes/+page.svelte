@@ -43,8 +43,28 @@
 				<tr>
 					<td>{entry.projectStage}</td>
 					<td>{entry.topic}</td>
-					<td>{entry.qrp ?? '-'}</td>
-					<td>{entry.honestError ?? '-'}</td>
+					<td>
+						<div>
+							{#if entry.qrp}
+								{@const [header, content] = entry.qrp.split(':')}
+								<span class="font-bold">{header}</span>
+								<p>{content}</p>
+							{:else}
+								-
+							{/if}
+						</div>
+					</td>
+					<td>
+						<div>
+							{#if entry.honestError}
+								{@const [header, content] = entry.honestError.split(':')}
+								<span class="font-bold">{header}</span>
+								<p>{content}</p>
+							{:else}
+								-
+							{/if}
+						</div>
+					</td>
 				</tr>
 			{/each}
 			</tbody>
